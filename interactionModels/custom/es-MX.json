@@ -1,0 +1,52 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "primerNumero",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "segundoNumero",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "tercerNumero",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "name": "CompararNumerosIntent",
+          "samples": [
+            "cual es el mayor entre {primerNumero} {segundoNumero} y {tercerNumero}",
+            "compara {primerNumero} {segundoNumero} y {tercerNumero}",
+            "dime el numero mayor entre {primerNumero} {segundoNumero} y {tercerNumero}"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "numero mas grande"
+    }
+  }
+}

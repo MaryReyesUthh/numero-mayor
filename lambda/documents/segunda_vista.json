@@ -1,0 +1,125 @@
+{
+    "type": "APL",
+    "version": "2023.1",
+    "license": "Copyright 2023 Amazon.com, Inc. or its affiliates. All Rights Reserved.\nSPDX-License-Identifier: LicenseRef-.amazon.com.-AmznSL-1.0\nLicensed under the Amazon Software License  http://aws.amazon.com/asl/",
+    "settings": {},
+    "theme": "dark",
+    "import": [],
+    "resources": [],
+    "styles": {},
+    "onMount": [],
+    "graphics": {},
+    "commands": {},
+    "layouts": {},
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "items": [
+            {
+                "type": "Container",
+                "direction": "column",
+                "width": "100%",
+                "height": "100%",
+                "items": [
+                    {
+                        "type": "Container",
+                        "height": "20%",
+                        "direction": "row",
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                        "paddingTop": "20px",
+                        "paddingBottom": "20px",
+                        "items": [
+                            {
+                                "type": "Text",
+                                "text": "${payload.launchData.Properties.titulo}",
+                                "style": "textStylePrimary",
+                                "fontSize": "40px",
+                                "textAlign": "center",
+                                "width": "65%"
+                            },
+                            {
+                                "type": "Image",
+                                "left": "50",
+                                "source": "${payload.launchData.Properties.logo}",
+                                "width": "150px"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Container",
+                        "direction": "row",
+                        "height": "65%",
+                        "width": "100%",
+                        "items": [
+                            {
+                                "type": "Container",
+                                "direction": "column",
+                                "width": "35%",
+                                "items": [
+                                    {
+                                        "type": "Image",
+                                        "source": "${payload.launchData.Properties.imagen_fondo}",
+                                        "width": "100%",
+                                        "height": "80%"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "Container",
+                                "direction": "column",
+                                "alignItems": "center",
+                                "width": "65%",
+                                "items": [
+                                    {
+                                        "type": "Text",
+                                        "text": "Opciones:",
+                                        "style": "textStylePrimary",
+                                        "fontSize": "35px",
+                                        "color": "white",
+                                        "paddingBottom": "40"
+                                    },
+                                    {
+                                        "type": "Text",
+                                        "text": "${payload.launchData.Properties.subtitulo}",
+                                        "style": "textStylePrimary",
+                                        "fontSize": "50px",
+                                        "color": "yellow"
+                                    },
+                                    {
+                                        "type": "Text",
+                                        "text": "${payload.launchData.Properties.mayor}",
+                                        "style": "textStylePrimary",
+                                        "fontSize": "80px",
+                                        "color": "blue",
+                                        "paddingTop": "10px"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Container",
+                        "height": "15%",
+                        "direction": "row",
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                        "paddingTop": "20px",
+                        "paddingBottom": "20px",
+                        "items": [
+                            {
+                                "type": "Text",
+                                "text": "${payload.launchData.Properties.pie}",
+                                "style": "textStylePrimary",
+                                "fontSize": "30px",
+                                "textAlign": "center",
+                                "width": "100%"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "launchData": {
+        "Properties": {
+            "titulo": "Numero mayor",
+            "subtitulo": "Te dire el numero mas grande de 3 que me des",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScsQrGJNCmlmG0VVrfnYWvRhx13mDOT_uErQ&usqp=CAU",
+            "imagen_fondo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5OyqB86W9xWM8_2E_4O8fvYaazstNqpFNGg&usqp=CAU",
+            "pie": "dime el numero mayor entre 1 2 y 3"
+        }
+    }
+}
